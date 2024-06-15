@@ -7,6 +7,13 @@ Solve this using a loop.
 
 // Your code here 
 
+function hasElement(arr, tar){
+    if(arr.includes(tar)){
+        return true;
+    } else {
+        return false;
+    }
+}
 
 // console.log(hasElement(['a', 'b', 'c', 'e'], 'c')); // true
 // console.log(hasElement(['a', 'b', 'c', 'e'], 'a')); // true

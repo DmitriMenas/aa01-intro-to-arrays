@@ -11,6 +11,14 @@ should return false otherwise.
 // let a2 = ['w', 'x', 'y'];
 // let a3 = [1, 3, 7, 4];
 
+function compareLengths(a1, a2){
+    if(a1.length === a2.length){
+        return false;
+    } else {
+        return true;
+    }
+}
+
 // console.log(compareLengths(a1, a2)); // => false
 // console.log(compareLengths(a1, a3)); // => true
 

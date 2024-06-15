@@ -6,8 +6,20 @@ array.  If no character exists in the array, return -1.
 
 // Your code here 
 
+function lastIndex(arr, char){
+    let index
+    for(let i = arr.length; i > 0; i--){
+        if(!(arr.includes(char))){
+            return -1;
+        } else if(arr[i] === char){
+            index = i
+        }
+    }
+    return index;
+}
 
-// console.log(lastIndex(["a", "b", "c", "a"], "a"));
+
+//console.log(lastIndex(["a", "b", "c", "a"], "a"));
 //=> 3
 // console.log(lastIndex(["m", "i", "s", "s", "i", "s", "s", "i", "p", "i"], "i"));
 //=> 9

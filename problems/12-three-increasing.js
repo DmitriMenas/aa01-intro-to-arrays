@@ -6,6 +6,14 @@ array contains three consecutive numbers in consecutive increasing order, like
 
 // Your code here 
 
+function threeIncreasing(arr) {
+    for (let i = 0; i < arr.length - 2; i++) {
+        if (arr[i + 1] - arr[i] === 1 && arr[i + 2] - arr[i + 1] === 1) {
+            return true;
+        }
+    }
+    return false;
+}
 
 // console.log(threeIncreasing([3, 2, 11, 12, 13, 2, 4]));     // true
 // console.log(threeIncreasing([2, 7, 8, 9]));                 // true

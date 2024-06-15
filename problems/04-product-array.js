@@ -6,6 +6,13 @@ together. You can assume that nums will not be an empty array.
 
 // Your code here 
 
+function product(nums){
+    let count = 1;
+    for(let i = 0; i < nums.length; i++){
+        count *= nums[i]
+    }
+    return count;
+}
 
 // console.log(product([10, 3, 5, 2])); // 300
 // console.log(product([4, 3]));        // 12

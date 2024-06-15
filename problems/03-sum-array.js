@@ -4,6 +4,14 @@ returns the total sum of all the numbers.
 
 // Your code here 
 
+function sumArray(arr){
+    let count = 0;
+    for(let i = 0; i < arr.length; i++){
+        count += arr[i];
+    }
+    return count;
+}
+
 
 // console.log(sumArray([1, 2]));        // => 3
 // console.log(sumArray([5, 6, 4]));     // => 15

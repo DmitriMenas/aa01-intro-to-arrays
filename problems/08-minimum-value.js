@@ -6,6 +6,19 @@ array is empty, the function should return null.
 
 // Your code here 
 
+function minVal(arr){
+    if(arr.length < 1){
+        return null;
+    }
+    let smol;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i]< arr[i+1]){
+            smol = arr[i]
+        }
+    }
+    return smol;
+}
+
 
 // console.log(minVal([4, 6, 3, 5, 2, 4])); // 2
 // console.log(minVal([-2, -3, -7, 3 ]));   // -7
